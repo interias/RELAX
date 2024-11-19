@@ -1,7 +1,7 @@
 
 # RELAX: Release and Destress Cycle for 3D Printing
 
-RELAX is a Klipper macro for automating the process of releasing 3D printed parts from the bed and performing destress heating to minimize stress marks and thermal-induced warping. The macro is highly configurable, allowing you to adjust temperatures, times, and even cooling fan settings.
+RELAX is a Klipper macro for automating the process of releasing 3D printed parts from the bed and performing destress heating to minimize stress marks and thermal-induced warping. The macro is configurable, allowing you to adjust temperatures, times and BEDFANS (if available)
 
 ---
 
@@ -9,7 +9,7 @@ RELAX is a Klipper macro for automating the process of releasing 3D printed part
 
 - **Release Parts Automatically**: Heat the bed to a configurable release temperature, allowing parts to detach smoothly.
 - **Destress Heating**: Relieve internal stresses in your printed parts with controlled heating and holding cycles.
-- **Optional Bed Fan Support**: Use bed fans during the process for enhanced cooling.
+- **Optional Bed Fan Support**: Use bed fans during the process for quicker cooling.
 - **Customizable Parameters**: Fine-tune temperatures and durations to match your material and project requirements.
 - **Auto Updates via Git**: Easily update the macro through Moonraker's update manager with Git.
 
@@ -85,13 +85,22 @@ RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_b
 
 ---
 
-## Feedback and Contributions
 
-Author: **Stefan Börzel**  
-Discord: `sbrzl_3.14`
+### Feedback and Contributions
 
-Feedback, suggestions, and contributions are welcome!  
-GitHub Repository: [RELAX](https://github.com/interias/RELAX)
+We value your input to improve RELAX! Please share your feedback and experiences with us, including:
+
+- **Temperatures**: What release and destress temperatures worked best for your material?
+- **Timing**: Optimal hold times for release and destress cycles.
+- **Results on Warping**: How effective was the destress cycle in reducing warping or stress marks?
+- **Pictures**: Share before-and-after photos of your parts to help refine the process.
+
+You can provide feedback through:
+- **Author**: Stefan Börzel
+- **Discord**: `sbrzl_3.14`
+- **GitHub Issues**: [RELAX GitHub Repository](https://github.com/interias/RELAX/issues)
+
+Your contributions will help us create a better experience for everyone! 😊
 
 ---
 
