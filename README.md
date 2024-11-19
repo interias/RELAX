@@ -25,6 +25,16 @@ RELAX is a Klipper macro for automating the process of releasing 3D printed part
 
 ---
 
+## How It Works:
+
+- **Release Cycle**: Heats the bed to a specific temperature to allow parts to release naturally.
+- **Destress Cycle**: Holds the bed at a destress temperature for a set duration to reduce stress marks and prevent warping.
+- **Cooldown: Safely**: shuts down the printer or cools to a final temperature.
+
+![How it works](images/howitworks.jpg)
+
+---
+
 ## Installation
 
 1. Clone the RELAX repository into your Klipper configuration directory:
