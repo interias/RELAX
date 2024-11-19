@@ -50,8 +50,9 @@ By integrating RELAX into the post-printing workflow, users can enjoy the benefi
 
 1. Clone the RELAX repository into your Klipper configuration directory:
    ```bash
-   cd ~/printer_data/config
+   cd
    git clone https://github.com/interias/RELAX.git
+   ln -s ~/RELAX printer_data/config/RELAX
    ```
 
 2. Include the RELAX macro file in your main Klipper configuration:
@@ -70,7 +71,7 @@ By integrating RELAX into the post-printing workflow, users can enjoy the benefi
    [update_manager relax]
    type: git_repo
    origin: https://github.com/interias/RELAX.git
-   path: ~/printer_data/config/RELAX
+   path: ~/RELAX
    managed_services: klipper
    ```
 
