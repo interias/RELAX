@@ -1,3 +1,4 @@
+
 # RELAX: Release and Destress Cycle for 3D Printing
 
 RELAX is a Klipper macro for automating the process of releasing 3D printed parts from the bed and performing destress heating to minimize stress marks and thermal-induced warping. The macro is highly configurable, allowing you to adjust temperatures, times, and even cooling fan settings.
@@ -10,7 +11,7 @@ RELAX is a Klipper macro for automating the process of releasing 3D printed part
 - **Destress Heating**: Relieve internal stresses in your printed parts with controlled heating and holding cycles.
 - **Optional Bed Fan Support**: Use bed fans during the process for enhanced cooling.
 - **Customizable Parameters**: Fine-tune temperatures and durations to match your material and project requirements.
-- **Auto Updates**: Easily update the macro through Moonraker's update manager.
+- **Auto Updates via Git**: Easily update the macro through Moonraker's update manager with Git.
 
 ---
 
@@ -26,23 +27,29 @@ RELAX is a Klipper macro for automating the process of releasing 3D printed part
 
 ## Installation
 
-1. Copy the `RELAX` macro into your Klipper configuration file.
-2. Save the macro under a descriptive file name, such as `relax.cfg`.
-3. Include the macro in your main printer configuration:
-   ```ini
-   [include relax.cfg]
+1. Clone the RELAX repository into your Klipper configuration directory:
+   ```bash
+   cd ~/printer_data/config
+   git clone https://github.com/interias/RELAX.git
    ```
-4. **Integrate into `PRINT_END`:** Add the following line to your `PRINT_END` macro to automatically invoke the RELAX cycle at the end of a print:
+
+2. Include the RELAX macro file in your main Klipper configuration:
+   ```ini
+   [include RELAX/relax.cfg]
+   ```
+
+3. **Integrate into `PRINT_END`:** Add the following line to your `PRINT_END` macro to automatically invoke the RELAX cycle at the end of a print:
    ```ini
    RELAX
    ```
-5. **Enable Automatic Updates**:
-   Add the following entry to your `moonraker.conf` file to enable auto-updates for RELAX:
+
+4. **Enable Automatic Updates via Moonraker**:
+   Add the following entry to your `moonraker.conf` file to manage updates through Moonraker:
    ```ini
    [update_manager relax]
-   type: file
-   path: ~/printer_data/config/relax.cfg
-   url: https://raw.githubusercontent.com/interias/relax/main/relax.cfg
+   type: git_repo
+   path: ~/printer_data/config/RELAX
+   url: https://github.com/interias/RELAX.git
    ```
 
 ---
@@ -79,11 +86,11 @@ RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_b
 
 ## Feedback and Contributions
 
-Author: **Stefan Börzel**
+Author: **Stefan Börzel**  
 Discord: `sbrzl_3.14`
 
 Feedback, suggestions, and contributions are welcome!  
-GitHub Repository: [RELAX](https://github.com/interias/relax)
+GitHub Repository: [RELAX](https://github.com/interias/RELAX)
 
 ---
 
