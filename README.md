@@ -48,8 +48,9 @@ RELAX is a Klipper macro for automating the process of releasing 3D printed part
    ```ini
    [update_manager relax]
    type: git_repo
+   origin: https://github.com/interias/RELAX.git
    path: ~/printer_data/config/RELAX
-   url: https://github.com/interias/RELAX.git
+   managed_services: klipper
    ```
 
 ---
