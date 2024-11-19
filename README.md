@@ -28,11 +28,8 @@ By integrating RELAX into the post-printing workflow, users can enjoy the benefi
 
 ## Before and After
 
-### Before Destressing
-![Before Destressing](images/before.jpg)
-
-### After Destressing
-![After Destressing](images/after.jpg)
+### Before and After Destressing
+![Before and After Destressing](images/before_and_after.jpg)
 
 ---
 
