@@ -5,6 +5,17 @@ RELAX is a Klipper macro for automating the process of releasing 3D printed part
 
 ---
 
+## Motivation
+The RELAX macro was created to address a common problem in 3D printing: stress marks caused by thermal contraction, often referred to as "white marks." While heat guns are a standard solution, they are not always practical or efficient for every scenario:
+
+- **Thin Parts**: Thin parts tend to soften and bend under a heat gun before the stress marks disappear, making manual treatment unsuitable.
+- **Efficiency**: Automating the process is critical when dealing with large-scale production or repeated tasks. Treating a few hundred parts a day with a heat gun is not only time-consuming but also tedious.
+- **Consistency**: Manual processes can vary in effectiveness. RELAX ensures that each part undergoes a consistent and repeatable treatment cycle.
+
+By integrating RELAX into the post-printing workflow, users can enjoy the benefits of automated stress relief, saving time and effort while improving part quality. This macro was designed with both hobbyists and professionals in mind, enabling smooth, repeatable destressing without manual intervention.
+
+---
+
 ## Features
 
 - **Release Parts Automatically**: Heat the bed to a configurable release temperature, allowing parts to detach smoothly.
