@@ -79,7 +79,7 @@ RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_b
 
 ## Feedback and Contributions
 
-Author: **Stefan Börzel**  
+Author: **Stefan Börzel**
 Discord: `sbrzl_3.14`
 
 Feedback, suggestions, and contributions are welcome!  
