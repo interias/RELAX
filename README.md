@@ -1,7 +1,7 @@
 
 # RELAX: Release and Destress Cycle for 3D Printing
 
-RELAX is a Klipper macro for automating the process of releasing 3D printed parts from the bed and performing destress heating to minimize stress marks and thermal-induced warping. The macro is configurable, allowing you to adjust temperatures, times and BEDFANS (if available)
+RELAX is a Klipper macro for automating the process of releasing 3D printed parts from the bed and performing destress heating to minimize stress marks and thermal-induced warping. The macro is configurable, allowing you to adjust temperatures and times.
 
 ---
 
@@ -20,7 +20,6 @@ By integrating RELAX into the post-printing workflow, users can enjoy the benefi
 
 - **Release Parts Automatically**: Heat the bed to a configurable release temperature, allowing parts to detach smoothly.
 - **Destress Heating**: Relieve internal stresses in your printed parts with controlled heating and holding cycles.
-- **Optional Bed Fan Support**: Use bed fans during the process for quicker cooling.
 - **Customizable Parameters**: Fine-tune temperatures and durations to match your material and project requirements.
 - **Auto Updates via Git**: Easily update the macro through Moonraker's update manager with Git.
 
@@ -83,7 +82,7 @@ RELAX
 
 Or customize parameters for your specific use case:
 ```gcode
-RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_bedfans=true
+RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400
 ```
 
 ### Parameters
@@ -91,7 +90,6 @@ RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_b
 - `release_time`: Time in seconds to hold the release temperature (default: 120s).
 - `destress_temp`: Target temperature for stress relief (default: 100°C).
 - `destress_time`: Time in seconds to hold the destress temperature (default: 300s).
-- `use_bedfans`: Enable or disable bed fans (`true` or `false`, default: `false`).
 
 ---
 
@@ -99,7 +97,7 @@ RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_b
 
 An example use case for ABS:
 ```gcode
-RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400 use_bedfans=true
+RELAX release_temp=60 release_time=150 destress_temp=110 destress_time=400
 ```
 
 ---
